@@ -88,7 +88,7 @@
                 {
                     center: [5.0, 15.0],
                     crs: L.CRS.EPSG3857,
-                    zoom: 3,
+                    zoom: 1,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -104,7 +104,7 @@
         // Inline style for coloring the button
         container.innerHTML = '<a href="#" title="Reset zoom" role="button" aria-label="Reset zoom" style="width: 30px; height: 30px; line-height: 20px; display: block; text-align: center; background-color: #401606; color: white; margin-top: -15px;"><i class="fa fa-refresh" style="line-height: 30px;"></i></a>';
         container.onclick = function(){
-            map.setView([5.0, 15.0], 3); // Reset map view to initial position and zoom
+            map.setView([5.0, 15.0], 1); // Reset map view to initial position and zoom
         }
         return container;
     }
